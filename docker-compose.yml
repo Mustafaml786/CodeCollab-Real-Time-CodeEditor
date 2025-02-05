@@ -9,6 +9,8 @@ services:
       - "5000:5000"
     environment:
       - MONGODB_URI=mongodb+srv://mustafa_user_32:Mustafa1@cluster0.0e4nm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - PORT=3000
+      - BACKEND_PORT=5000
     restart: always
     volumes:
       - ./data:/usr/src/app/data

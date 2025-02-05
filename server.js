@@ -165,8 +165,11 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-    console.log(`Backend server listening on port ${PORT}`);
+// Change the port configuration
+const FRONTEND_PORT = process.env.PORT || 3000;
+const BACKEND_PORT = process.env.BACKEND_PORT || 5000;
+
+server.listen(BACKEND_PORT, () => {
+    console.log(`Backend server listening on port ${BACKEND_PORT}`);
     console.log(`Socket.IO server is ready for connections`);
 });
