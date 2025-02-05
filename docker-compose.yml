@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  codecollab:
+    build: .
+    container_name: codecollab
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=mongodb+srv://mustafa_user_32:Mustafa1@cluster0.0e4nm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    restart: always
+    volumes:
+      - ./data:/usr/src/app/data
+    networks:
+      - codecollab-network
+
+networks:
+  codecollab-network:
+    driver: bridge 

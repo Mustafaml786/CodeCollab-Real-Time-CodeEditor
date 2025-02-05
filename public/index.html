@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content="CodeCollab - Real-time collaborative code editor" />
+    <meta name="keywords" content="code editor, collaboration, real-time, programming" />
+    <meta name="author" content="CodeCollab Team" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="CodeCollab - Real-time Code Editor" />
+    <meta property="og:description" content="Collaborate on code in real-time with your team" />
+    <meta property="og:image" content="%PUBLIC_URL%/codecollab-social.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>CodeCollab - Real-time Collaborative Code Editor</title>
+    
+    <style>
+        /* Add a loading animation for initial page load */
+        #root:empty {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0f172a;
+        }
+        
+        #root:empty::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #2563eb;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run CodeCollab.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>
